@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Toh Melanie Xiao Xuan | Homepage
+        </title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap">
+        <link rel="stylesheet" href="style.css">
+        <meta name="author" content="Toh Melanie Xiao Xuan">
+        <meta name="description" content="This page is the final project for my ITP104 class. It is a website to showcase
+        my traditional artwork portfolio, my resume and past projects, as well as a linktree for my professional endeavors.
+        This page contains a contact me form.">
+        <style>
+            #block {
+                width: 1240px;
+                margin: auto;
+                display: block;
+                border-radius: 25px;
+                background-color: rgba(224, 195, 157);
+                padding-bottom: 10px;
+                text-align: center;
+            }
+            #contactme_heading {
+                height: 50px;
+                padding-top: 20px;
+            }
+            form {
+                font-size: 17px;
+                margin-left: 55px;
+                margin-top: 10px;
+            }
+            .left {
+                width: 230px;
+                height: auto;
+                padding: 10px;
+                float: left;
+                text-align: right;
+                color: #6D553D;
+            }
+            .row {
+                margin: 10px 0px;
+                display: flex;
+            }
+            #sketches-left {
+                height: 640px;
+                position: absolute;
+                left: 100px;
+            }
+            #sketches-right {
+                height: 640px;
+                position: absolute;
+                right: 90px;
+            }
+            button {
+                margin: 10px;
+                background-color: #6D553D;
+                color: rgba(224, 195, 157);
+                border-radius: 25px;
+                font-size: 18px;
+                font-family: Nunito;
+            }
+            input {
+                margin: 10px;
+                width: 250px;
+                height: 27px;
+                border-color: #6D553D;
+                border-radius: 25px;
+            }
+            #message-id {
+                width: 600px;
+                height: 150px;
+                border-radius: 25px;
+            }
+            select {
+                margin: 10px;
+                width: 250px;
+                height: 27px;
+                color: #6D553D;
+                border-color: #6D553D;
+                border-radius: 25px;
+                font-family: Nunito;
+            }
+            ::placeholder {
+                color: #6D553D;
+                opacity: 0.7;
+                font-family: Nunito;
+                font-size: 16px;
+            }
+            option {
+                color: #6D553D;
+                opacity: 0.7;
+                font-size: 16px;
+            }
+            textarea {
+                margin: 10px;
+            }
+            label {
+                color: #6D553D;
+            }
+            #footer {
+                height: 40px;
+                margin: auto;
+                text-align: center;
+                position: relative;
+            }
+            #footer img {
+                height: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <a href="homepage.html"><img src="assets/logo_unclick.png" alt="Logo"></a>
+        </div>
+        <div id="navbar">
+            <div id="nav">
+                <ul>
+                    <li><a href="aboutme.html"><img src="assets/aboutme_unclick.png" alt="About Me icon" class="page-icons"></a></li>
+                    <li><a href="pastproj.html"><img src="assets/pastproj_unclick.png" alt="Past Project icon" class="page-icons"></a></li>
+                    <li><a href="contactme.html"><img src="assets/contactme_click.png" alt="Contact Me icon" class="page-icons"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="main">
+            <div id="block">
+                <img src="img/sketches_left.png" alt="Sketches" id="sketches-left">
+                <img src="img/sketches_right.png" alt="Sketches" id="sketches-right">
+                <img src="assets/contactme_heading.png" alt="Contact Me Heading" id="contactme_heading">
+                <form action="confirm.html">
+                    <div class="row">
+                        <div class="left">
+                        <label for="name-id"><b>Name:</b></label>
+                        </div>
+                        <input type="text" id="name-id" placeholder="  Tommy Trojan">
+                    </div>
+    
+                    <div class="row">
+                        <div class="left">
+                        <label for="pronouns-id"><b>Pronouns:</b></label>
+                        </div>
+                        <input type="text" id="pronouns-id" placeholder="  They/them">
+                    </div>
+
+                    <div class = "row">
+                        <div class = "left">
+                        <label for="email-id"><b>Email:</b></label>
+                        </div>
+                        <input type="email" id="email-id" placeholder="  ttrojan@usc.edu">
+                    </div>
+    
+                    <div class="row">
+                        <div class="left">
+                        <label for="email-id"><b>Company:</b></label>
+                        </div>
+                        <input type="text" id="company-id" placeholder="  University of Southern California">
+                    </div>
+    
+                    <div class="row">
+                        <div class="left">
+                        <label for="email-id"><b>Position:</b></label>
+                        </div>
+                        <input type="text" id="position-id" placeholder="  Company recruiter">
+                    </div>
+    
+                    <div class="row">
+                        <div class="left">
+                        <b>Message:</b>
+                        </div>
+                        <textarea id="message-id" placeholder="   Please leave a message!"></textarea>
+                    </div>
+    
+                    <div class="row">
+                        <div class="left">
+                        </div>
+                        <button type="submit">Submit</button>
+                        <button type="reset">Clear</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="footer">
+            <img src="assets/footer.png" alt="Footer">
+        </div>
+    </body>
+</html>

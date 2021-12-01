@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Toh Melanie Xiao Xuan | Homepage
+        </title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap">
+        <link rel="stylesheet" href="style.css">
+        <meta name="author" content="Toh Melanie Xiao Xuan">
+        <meta name="description" content="This page is the final project for my ITP104 class. It is a website to showcase
+        my traditional artwork portfolio, my resume and past projects, as well as a linktree for my professional endeavors.">
+        <style>
+            #left {
+                width: 350px;
+                height: 600px;
+                padding: 15px;
+                padding-right: 25px;
+                display: block;
+                background-color: rgba(224, 195, 157);
+                border-radius: 25px;
+                float: left;
+                text-align: center;
+                margin-left: 30px;
+            }
+            #headshot {
+                width: 170px;
+                height: auto;
+                border-radius: 90px;
+                border: 1px inset #6D553D;
+            }
+            #headshot-desc {
+                text-align: left;
+            }
+            .logos {
+                width: 40px;
+                padding: 10px;
+            }
+            #right {
+                width: 850px;
+                padding: 15px;
+                padding-top: 0px;
+                display: flex;
+                float: right;
+            }
+            #top {
+                width: 595px;
+                height: 1000px;
+                padding-bottom: 5px;
+                margin: auto;
+                overflow: hidden;
+                position: relative;
+            }
+            #one {
+                width: 340px;
+                height: 438px;
+                padding-right: 5px;
+                float: left;
+                display: flex;
+            }
+            #two {
+                width: 240px;
+                height: 214px;
+                padding-bottom: 5px;
+                padding-left: 5px;
+                float: right;
+                display: flex;
+            }
+            #seven {
+                width: 240px;
+                height: 214px;
+                padding-top: 5px;
+                padding-left: 5px;
+                float: right;
+                display: flex;
+            }
+            #three {
+                width: 295px;
+                height: 449px;
+                padding-top: 10px;
+                padding-right: 5px;
+                display: flex;
+                float: left;
+            }
+            #four {
+                width: 290px;
+                height: 449px;
+                padding-top: 10px;
+                padding-left: 5px;
+                display: flex;
+                float: right;
+            }
+            #melting {
+                width: 200px;
+                height: 1000px;
+                display: flex;
+                float: right;
+            }
+            #five {
+                width: 250px;
+                height: 290px;
+                padding-bottom: 5px;
+                display: flex;
+                position: relative;
+                right: 15px;
+            }
+            #six {
+                width: 250px;
+                height: 290px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                display: flex;
+                position: relative;
+                top: 295px;
+                right: 225px;
+            }
+            #eight {
+                width: 260px;
+                height: 297px;
+                padding-top: 5px;
+                display: flex;
+                position: relative;
+                top: 595px;
+                right: 437px;
+            }
+            #left2 {
+                width: 200px;
+                height: 1300px;
+                display: flex;
+                float: left;
+                position: absolute;
+                top: 1110px;
+                left: 523px;
+            }
+            #nine {
+                width: 500px;
+                height: 334px;
+                display: flex;
+                padding-bottom: 5px;
+                position: relative;
+            }
+            #ten {
+                width: 500px;
+                height: 334px;
+                display: flex;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                position: relative;
+                top: 340px;
+                right: 500px;
+            }
+            #eleven {
+                width: 500px;
+                height: 606px;
+                display: flex;
+                padding-top: 5px;
+                position: relative;
+                top: 685px;
+                right: 1000px;
+            }
+            #right2 {
+                width: 200px;
+                height: 1300px;
+                display: flex;
+                float: right;
+                position: absolute;
+                top: 1110px;
+                left: 1038px;
+            }
+            #twelve {
+                width: 310px;
+                height: 400px;
+                display: flex;
+                position: relative;
+            }
+            #thirteen {
+                width: 305px;
+                height: 437px;
+                display: flex;
+                position: relative;
+                top: 411px;
+                right: 305px;
+            }
+            #fourteen {
+                width: 305px;
+                height: 413px;
+                display: flex;
+                position: relative;
+                top: 860px;
+                right: 610px;
+            }
+            .box {
+                position: relative;
+                overflow: hidden;
+                border-radius: 25px;
+            }
+            .box > img {
+                position: relative;
+                width: auto;
+                height: 100%;
+            }
+            .box > .caption {
+                position: absolute;
+                top: 0px;
+                bottom: 0px;
+                left: 0px;
+                right: 0px;
+                padding: 15px;
+                padding-top: 25px;
+
+                background-color: rgba(79, 49, 26, 0.5);
+                color: #FFF;
+                text-align: center;
+
+                visibility: hidden
+            }
+            .box:hover > .caption {
+                visibility: visible;
+            }
+            p {
+                color: #6D553D;
+            }
+            li {
+                color: #6D553D;
+                line-height: 35px;
+            }
+            #footer {
+                height: 40px;
+                margin: auto;
+                text-align: center;
+                position: relative;
+                top: 1200px;
+            }
+            #footer img {
+                height: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <a href="homepage.html"><img src="assets/logo_click.png" alt="Logo"></a>
+        </div>
+        <div id="navbar">
+            <div id="nav">
+                <ul>
+                    <li><a href="aboutme.html"><img src="assets/aboutme_unclick.png" alt="About Me icon" class="page-icons"></a></li>
+                    <li><a href="pastproj.html"><img src="assets/pastproj_unclick.png" alt="Past Project icon" class="page-icons"></a></li>
+                    <li><a href="contactme.html"><img src="assets/contactme_unclick.png" alt="Contact Me icon" class="page-icons"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="main">
+            <div id="left">
+                <img src="img/headshot.png" alt="Headshot" id="headshot">
+                <p style="font-size: 18px;"><b>TOH Melanie Xiao Xuan (卓曉萱)</b></p>
+                <p><i>Los Angeles, CA & Hong Kong</i></p>
+                <div id="headshot-desc">
+                    <ul>
+                        <li>University of Southern California student
+                            <ul>
+                                <li>Expected graduation date: Fall 2023</li>
+                            </ul>
+                        </li>
+                        <li>Current positions: Teaching Assistant at USC Viterbi School of Engineering, Head of Marketing at AthenaHacks</li>
+                        <li>Interested in: UI/UX design</li>
+                        <li><b>Seeking Summer '22 internships in HK</b></li>
+                    </ul>
+                </div>
+                <a href="https://www.instagram.com/meltoh.art/?hl=en"><img src="img/insta.png" alt="Instagram logo" class="logos"></a>
+                <a href="https://github.com/melanietoh"><img src="img/github.png" alt="GitHub logo" class="logos"></a>
+                <a href="https://www.linkedin.com/in/melanietoh/"><img src="img/linkedin.png" alt="LinkedIn logo" class="logos"></a>
+            </div>
+            <div id="right">
+                <div id="top">
+                    <div id="one">
+                        <div class="box">
+                            <img src="img/revolution.jpg" alt="Revolution of Our Times" id="revol">
+                            <div class="caption">
+                                Title: Revolution of Our Times (2020) <br>
+                                Media: Oil Painting on Canvas <br>
+                                - <br>
+                                The series of protests that took place in Hong Kong, dubbed the Revolution
+                                of Our Times (時代革命), are a testament to the great sense of belonging that
+                                Hong-Kongers felt towards the city. Bearing construction hard hats, safety goggles,
+                                and industrial grade gas masks, millions took to the streets to protect the city's 
+                                legacy. With tear gas and pepper spray heavy in the air – as depicted in the piece –
+                                they upkept an unfaltering stance and truly proved their loyalty to the city.
+                            </div>
+                        </div>
+                    </div>
+                    <div id="two">
+                        <div class="box">
+                            <img src="img/revolution_closeup.jpg" alt="Revolution of Our Times Closeup" class="revol-closeup">
+                            <div class="caption">
+                                Title: Revolution of Our Times (2020)
+                            </div>
+                        </div>
+                    </div>
+                    <div id="seven">
+                        <div class="box">
+                            <img src="img/revolution_closeup2.jpg" alt="Revolution of Our Times Closeup 2" class="revol-closeup">
+                            <div class="caption">
+                                Title: Revolution of Our Times (2020)
+                            </div>
+                        </div>
+                    </div>
+                    <div id="three">
+                        <div class="box">
+                            <img src="img/collage.jpg" alt="Collage">
+                            <div class="caption">
+                                Title: Herd Mentality (2019) <br>
+                                Media: Digital Collage <br>
+                                - <br>
+                                These two collages served as a way to familiarise myself with colour schemes
+                                and the cohesion of different textures in a piece. Utilising Photoshop to digitally
+                                manipulate magazine cut outs to fit into a theme and palette of my choosing, I found
+                                it rewarding to join together otherwise clashing elements into one piece of artwork.
+                            </div>
+                        </div>
+                    </div>
+                    <div id="four">
+                        <div class="box">
+                            <img src="img/collage2.png" alt="Collage 2">
+                            <div class="caption">
+                                Title: Identity (2019) <br>
+                                Media: Digital Collage <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="melting">
+                    <div id="five">
+                        <div class="box">
+                            <img src="img/meltingpot1.jpg" alt="Melting Pot Series: Part One">
+                            <div class="caption">
+                                Title: Melting Pot Series: Part One (2019) <br>
+                                Media: Posca Pen on Gelli Print <br>
+                                - <br>
+                                Once again honing in on the theme of identity and belonging, this series 
+                                portrays the internal conflict that many have with their cultural ties. 
+                            </div>
+                        </div>
+                    </div>
+                    <div id="six">
+                        <div class="box">
+                            <img src="img/meltingpot3.jpg" alt="Melting Pot Series: Part Two">
+                            <div class="caption">
+                                Title: Melting Pot Series: Part Two (2019) <br>
+                                - <br>
+                                Perhaps due to not looking like the locals of the place you call home, or
+                                the separation between fond personal memories and politics, these figures
+                                display a deadpan expression-
+                            </div>
+                        </div>
+                    </div>
+                    <div id="eight">
+                        <div class="box">
+                            <img src="img/meltingpot2.jpg" alt="Melting Pot Series: Part Three">
+                            <div class="caption">
+                                Title: Melting Pot Series: Part Three (2019) <br>
+                                - <br>
+                                -as they're not fully immersed into the background,
+                                standing out due to a lack of something they cannot quite pinpoint.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="left2">
+                    <div id="nine">
+                        <div class="box">
+                            <img src="img/intimacy1.png" alt="Intimacy Series: Part One">
+                            <div class="caption">
+                                Title: Intimacy Series: Part One (2020) <br>
+                                Media: Digital Photography <br>
+                                - <br>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ten">
+                        <div class="box">
+                            <img src="img/intimacy3.png" alt="Intimacy Series: Part Three">
+                            <div class="caption">
+                                Title: Intimacy Series: Part Three (2020) <br>
+                                Media: Digital Photography <br>
+                                - <br>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="eleven">
+                        <div class="box">
+                            <img src="img/roots.jpg" alt="Roots">
+                            <div class="caption">
+                                Title: Roots (2019) <br>
+                                Media: Wax Pastels and Colored Pencils on Wood <br>
+                                - <br>
+                                Inspired by Japanese-American artist Audrey Kawasaki, <i>Roots</i> is 
+                                a piece that discusses complicated cultural and emotional ties. Bearing
+                                strong colour and floral symbolism, this piece uses negative space to
+                                depict a somewhat convoluded definition to heritage and belonging
+                                with blurred and soft lines that make up the peonies' outline. Its extended
+                                stems flowing about the figure loosely, varying in thickness and length,
+                                symbolise the everchanging stance we all have regarding identity.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="right2">
+                    <div id="twelve">
+                        <div class="box">
+                            <img src="img/intimacy2.png" alt="Intimacy Series: Part Two">
+                            <div class="caption">
+                                Title: Intimacy Series: Part Two (2020) <br>
+                                Media: Digital Photography <br>
+                                - <br>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="thirteen">
+                        <div class="box">
+                            <img src="img/home.jpg" alt="Home is Where the Heart is">
+                            <div class="caption">
+                                Title: Home is Where the Heart is <br>
+                                Media: Digital Photography and Collaging, Screenprinting <br>
+                                - <br>
+                                With a figure that goes against the grain of what a typical Hong-Konger 
+                                looks like, this piece – like many of my other pieces – explores the 
+                                identity crisis and inner conflict that many have as they feel most connected
+                                to this unique and diverse city. Overlaid above Hong Kong landmarks, the figure 
+                                remains the focal point as it is in bright red, symbolising the occurence of
+                                always standing out as a 'non-local' and the feeling of isolation.
+                            </div>
+                        </div>
+                    </div>
+                    <div id="fourteen">
+                        <div class="box">
+                            <img src="img/alex.jpg" alt="舊式香港">
+                            <div class="caption">
+                                Title: 舊式香港 (trans. Vintage Hong Kong)<br>
+                                Media: Digital Artwork and Photography <br>
+                                - <br>
+                                Inspired by the nightscape of Hong Kong, this piece pays homage 
+                                to the iconic bright and saturated neon lights most prominent during
+                                the 1970's to 1990's. This artwork expresses the appreciation, to this day,
+                                that many Hong-Kongers have towards 'traditional' aspects of the city.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <img src="assets/footer.png" alt="Footer">
+        </div>
+    </body>
+</html>

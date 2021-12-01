@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Toh Melanie Xiao Xuan | Homepage
+        </title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap">
+        <link rel="stylesheet" href="style.css">
+        <meta name="author" content="Toh Melanie Xiao Xuan">
+        <meta name="description" content="This is a website for my ITP104 final project. It is to showcase my traditional artwork portfolio, my resume and
+         past projects, as well as a linktree for my professional endeavors. This particular page is a 'Past Projects'' page which has details about all
+         my past programming and web development projects.">
+         <style>
+             #main {
+                flex-wrap: wrap;
+             }
+            #thumbnails {
+                width: 1300px;
+                display: flex;
+                margin-bottom: 30px;
+            }
+            #left {
+                width: 397px;
+                height: 240px;
+                margin-left: 30px;
+                margin-right: 11.5px;
+                display: block;
+                border-radius: 25px;
+            }
+            #mid {
+                width: 397px;
+                height: 240px;
+                margin-left: 11.5px;
+                margin-right: 11.5px;
+                display: block;
+                border-radius: 25px;
+            }
+            #right {
+                width: 397px;
+                height: 240px;
+                margin-left: 11.5px;
+                margin-right: 15px;
+                display: block;
+                border-radius: 25px;
+            }
+            .box {
+                position: relative;
+                overflow: hidden;
+                border-radius: 25px;
+            }
+            .box > img {
+                position: relative;
+                height: 240px;
+            }
+            #scope {
+                position: relative;
+                right: 40px;
+            }
+            #tattoos {
+                position: relative;
+                right: 25px;
+            }
+            .box > .caption {
+                position: absolute;
+                top: 0px;
+                bottom: 0px;
+                left: 0px;
+                right: 0px;
+                padding: 15px;
+                padding-top: 85px;
+
+                background-color: rgba(79, 49, 26, 0.5);
+                color: #FFF;
+                font-size: 20px;
+                line-height: 40px;
+                text-align: center;
+
+                visibility: hidden
+            }
+            .box:hover > .caption {
+                visibility: visible;
+            }
+            .caption > a {
+                color: rgb(245, 222, 192);
+            }
+            p {
+                color: #6D553D;
+                font-size: 1.1em;
+                margin-left: 35px;
+                margin-right: 35px;
+            }
+            #content {
+                width: 1300px;
+                display: flex;
+                flex-direction: column;
+            }
+            #usc-scope a {
+                color: #6D553D;
+            }
+            #usc-scope {
+                width: 1240px;
+                height: 745px;
+                display: block;
+                border-radius: 25px;
+                margin-left: 30px;
+                background-color: rgba(224, 195, 157);
+            }
+            #personal-site {
+                width: 1240px;
+                height: 700px;
+                display: block;
+                border-radius: 25px;
+                background-color: rgba(224, 195, 157);
+                margin-top: 20px;
+                margin-left: 30px;
+                margin-bottom: 20px;
+            }
+            #coding-proj {
+                width: 1240px;
+                height: 1235px;
+                display: block;
+                border-radius: 25px;
+                margin-left: 30px;
+                background-color: rgba(224, 195, 157);
+            }
+            .title {
+                height: 65px;
+                padding: 15px;
+            }
+            .cont {
+                height: 350px;
+                margin-left: 35px;
+                margin-bottom: 15px;
+                border-radius: 25px;
+            }
+            #footer {
+                height: 40px;
+                margin: auto;
+                text-align: center;
+                position: relative;
+            }
+            #footer img {
+                height: 40px;
+            }
+         </style>
+    </head>
+    <body>
+        <div id="header">
+            <a href="homepage.html"><img src="assets/logo_unclick.png" alt="Logo"></a>
+        </div>
+        <div id="navbar">
+            <div id="nav">
+                <ul>
+                    <li><a href="aboutme.html"><img src="assets/aboutme_unclick.png" alt="About Me icon" class="page-icons"></a></li>
+                    <li><a href="pastprojects.html"><img src="assets/pastproj_click.png" alt="Past Project icon" class="page-icons"></a></li>
+                    <li><a href="contactme.html"><img src="assets/contactme_unclick.png" alt="Contact Me icon" class="page-icons"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="main">
+            <div id="thumbnails">
+                <div id="left">
+                    <div class="box">
+                        <img src="img/uscexy.jpg" alt="Scope Hackathon Project" id="scope">
+                        <div class="caption">
+                            <a href="#usc-scope">Web Development: <br>
+                            USC Scope Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="mid">
+                    <div class="box">
+                        <img src="img/tattoos.png" alt="Personal Website" id="tattoos">
+                        <div class="caption">
+                            <a href="#personal-site">Web Development: <br>
+                            Personal Website</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="right">
+                    <div class="box">
+                        <img src="img/code.png" alt="Coding Projects" id="code">
+                        <div class="caption">
+                            <a href="#coding-proj">Programming: <br>
+                            Coding Projects</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="content">
+                <div id="usc-scope">
+                    <img src="assets/usc_scope.png" alt="USC Scope Hackathon" class="title"> <br>
+                    <img src="img/uscexy.jpg" alt="Scope Hackathon Project" class="cont">
+                    <p><b>Demonstrated knowledge of implementing Firebase, a search bar, functional buttons, and HTML and CSS.</b></p>
+                    <p><b>Awarded Best Meme at the Scope Spring'21 hackathon</b></p>
+                    <p>-</p>
+                    <p>
+                        Created for the Scope hackathon, my three friends and I created this website that accepted anonymous submissions by USC students. This was inspired by the account 
+                        <a href="https://www.instagram.com/usc.missedconnections" target="_blank">@usc.missedconnections</a> on Instagram. Knowing that the account admin received too many
+                        submissions to be able to keep up with, we created a fully automated website that did all the work for them that got updated in real-time. It even has a like and 
+                        comments system, simulating Instagram's platform. The hashtags allow for users to specify a descriptor, such as a class ID or location, to only read related posts.
+                    </p>
+                </div>
+
+                <div id="personal-site">
+                    <a href="https://viterbi-web.usc.edu/~melaniex/itp104/assignment_06/interests.html" target="_blank"><img src="assets/personal_site.png" alt="Personal Site" class="title"></a> <br>
+                    <img src="img/site-homepage.png" alt="Personal Website Homepage" class="cont">
+                    <img src="img/site-gallery.png" alt="Personal Website Gallery Page" class="cont">
+                    <p><b>Demonstrated knowledge of flex boxes, external fonts, hover properties, and implementation of a drop-down menu.</b></p>
+                    <p>-</p>
+                    <p>
+                        Created for a web publishing class assignment, this website documents my current tattoos, talented artists that I follow, and my inspiration board. It has a drop-down
+                        menu that takes users to different sections of the homepage, a side bar and gallery page with images that reveal a caption when hovered over, and detailed information
+                        on each section with valid links that open on a new tab. Adopting a monochrome colour palette, this site is visually pleasing albeit quite basic, but it was a fun
+                        project to work on as one of the first sites I fully completed for this class.
+                    </p>
+                </div>
+
+                <div id="coding-proj">
+                    <img src="assets/coding_proj.png" alt="Coding Projects" class="title"> <br>
+                    <img src="img/code.png" alt="Coding Projects" class="cont">
+                    <p><b>String Parser</b></p>
+                    <p><i>Demonstrated knowledge of inheritance, polymorphism, and C++'s map, vector, and stack libraries.</i></p>
+                    <p>
+                        This programme read in a user-inputted file through fstream and parsed each line to interpret the correct operation. It supports the four mathematical operators (add, subtract,
+                        multiply, and divide), print, go to, go sub, return, and end statements. These commands were stored in a vector, then based on which operand it matched, the appropriate variables
+                        were stored to then be used to call on the appropriate functions. 
+                    </p>
+                    <p>-</p>
+                    <p><b>Doublet</b></p>
+                    <p><i>Demonstrated knowledge of the A* Search algorithm, d-ary MinHeap, and C++ vectors, maps, and sets</i></p>
+                    <p>
+                        Implemented the code to play the game "Doublet" invented by Lewis Carroll, wherein two words are provided to see if it is possible to transform the starting word to the end word by
+                        simply altering one letter at a time, so long as it is found within a word bank provided. The starting word would have every character altered, one at a time, to become all 26 letters
+                        in the alphabet, only storing those that were found in the set of words into a vector. A* Search algorithm was then implemented to calculate how far off the word was from becoming the 
+                        desired end word – this was our heuristic. Each word was stored in a map to keep track of its g-value, h-value, and child nodes in the MinHeap. The programme would print out the number
+                        of transformations needed to go from one word to the other.
+                    </p>
+                    <p>-</p>
+                    <p><b>Cryptography</b></p>
+                    <p><i>Demonstrated knowledge of the extended Euclidean algorithm, modular exponentiation, as well as encryption and decryption methods.</i></p>
+                    <p>
+                        The programme would take in ENCRYPT or DECRYPT as a command, along with a filename and key to begin the process. Encryption involved converting each character of the message to become an integer
+                        from 0-26 and be strung together to become several groups of long ints. Then, using modular exponentiation, it calculates a C value with the converted long int and outputs it into a given file, each
+                        separated by a white space. As for decryption, a key must be calculated with the extended Euclidean algorithm, and calculate for M with this key using the same formula. By converting M back to its 
+                        long int form, the programme reverses the encoding process by transforming each int to becoming a character once again.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <img src="assets/footer.png" alt="Footer">
+        </div>
+    </body>
+</html>
