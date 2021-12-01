@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Toh Melanie Xiao Xuan | Photo Gallery
+        </title>
+        <style>
+            body {
+                background: lightgray;
+            }
+            h1 {
+                text-align: center;
+                margin: 0px;
+            }
+            #header {
+                background-image: url('img/header.jpg');
+                width: 950px;
+                height: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                background-size: cover;
+                background-position: center;
+
+                color:rgb(216, 190, 182);
+                font-size: 1.1em;
+                text-align: center;
+                line-height: 200px;
+            }
+            #main {
+                width: 950px;
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+                display: flex;
+                background-color: rgb(216, 190, 182);
+            }
+            #left {
+                width: 320px;
+                height: auto;
+                padding: 5px;
+                padding-top: 35px;
+                float: left;
+            }
+            .L {
+                width: 280px;
+                height: auto;
+                padding: 10px;
+                margin-left: 5px;
+            }
+            .L + p {
+                visibility: hidden;
+            }
+            .L:hover + p {
+                visibility: visible;
+            }
+            #middle {
+                width: 310px;
+                height: auto;
+                padding: 5px;
+                padding-top: 35px;
+                float: left;
+            }
+            .mid {
+                width: 250px;
+                height: auto;
+                padding: 10px;
+                margin-left: 15px;
+            }
+            .mid + p {
+                visibility: hidden;
+            }
+            .mid:hover + p {
+                visibility: visible;
+            }
+            #right {
+                width: 320px;
+                height: auto;
+                padding: 5px;
+                padding-top: 35px;
+                float: right;
+            }
+            .R {
+                width: 280px;
+                height: auto;
+                padding: 10px;
+                margin-left: 5px;
+            }
+            .R + p {
+                visibility: hidden;
+            }
+            .R:hover + p {
+                visibility: visible;
+            }
+            p {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <h1>My Life in Hong Kong</h1>
+        </div>
+        <div id = "main">
+            <div id = "left">
+                <img class = "L" src="img/bday.JPG">
+                <p>My 19th birthday at Sunny Bay with Britney and Casey</p>
+                <img class = "L" src="img/isabella.JPG">
+                <p>Visiting Ngong Ping with Isabella</p>
+                <img class = "L" src="img/aylin.jpg">
+                <p>PMQ with Aylin</p>
+            </div>
+            
+            <div id = "middle">
+                <img class = "mid" src="img/christie.JPG">
+                <p>Rosewood Hotel staycation with Christie</p>
+                <img class = "mid" src="img/fg.JPG">
+                <p>Drinks at Foxglove with Britney and Tiffany</p>
+            </div>
+
+            <div id = "right">
+                <img class = "R" src="img/ryan.JPG">
+                <p>Ryan's 19th birthday party at Foxglove</p>
+                <img class = "R" src="img/graddin.jpg">
+                <p>Graduation night with Bella and Casey</p>
+                <img class = "R" src="img/jermbday.jpg">
+                <p>Jerm's 20th birthday party in Causeway Bay</p>
+            </div>
+        </div>
+    </body>
+</html>

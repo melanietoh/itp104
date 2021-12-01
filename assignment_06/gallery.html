@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            Melanie Toh's Tattoos Board
+        </title>
+        <style>
+            @font-face {
+                font-family: "Chomsky";
+                src: url("fonts/Chomsky.otf");
+            }
+            body {
+                background: #ecffff;
+            }
+            #header {
+                background-image: url('img/header.png');
+                width: 900px;
+                height: 200px;
+                margin-top: 50px;
+                margin-left: auto;
+                margin-right: auto;
+                background-size: cover;
+                background-position: center;
+
+                font-family: "Chomsky", serif;
+                color: rgb(37, 59, 63);
+                font-size: 1em;
+                text-align: center;
+                line-height: 200px;
+            }
+            #main {
+                width: 900px;
+                height: auto;
+                padding-bottom: 10px;
+                margin-left: auto;
+                margin-right: auto;
+                display: flex;
+                background-color: rgb(221, 234, 245);
+            }
+            #navbar {
+                background-color: rgb(154, 182, 205);
+                height: 50px;
+                position: fixed;
+                top: 0px;
+                bottom: 0px;
+                left: 0px;
+                right: 0px;
+                z-index: 1;
+            }
+            #nav {
+                width: 900px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #nav ul {
+                list-style: none;
+                margin: 0px;
+                padding: 0px;
+            }
+            #nav li {
+                background-color: rgb(154, 182, 205);
+                width: 450px;
+                text-align: center;
+            }
+            #nav > ul {
+                display: flex;
+                align-items: flex-start;
+            }
+            #nav ul ul {
+                position: absolute;
+                display: none;
+            }
+            #nav li:hover > ul {
+                display: block;
+            }
+            #nav a {
+                background-color: rgb(154, 182, 205);
+                text-decoration: none;
+                width: 450px;
+                height: 50px;
+                display: block;
+                text-align: center;
+                line-height: 50px;
+
+                border-bottom: 1px solid rgb(154, 182, 205);
+                color: rgb(228, 243, 255);
+            }
+            #nav a:hover {
+                background-color: rgb(127, 172, 181);
+            }
+            #nav .current {
+                background-color: rgb(127, 172, 181);
+            }
+            #left {
+                width: 212.5px;
+                height: 940px;
+                margin-left: 5px;
+                padding: 5px;
+                overflow: hidden;
+            }
+            #left2 {
+                width: 212.5px;
+                height: 940px;
+                padding: 5px;
+                overflow: hidden;
+            }
+            #right {
+                width: 212.5px;
+                height: 1240px;
+                padding: 5px;
+                overflow: hidden;
+            }
+            #right2 {
+                width: 212.5px;
+                height: 1240px;
+                padding: 5px;
+                overflow: hidden;
+            }
+            #bottom {
+                width: 470px;
+                height: 320px;
+                padding: 5px;
+                position: absolute;
+                margin-top: 937.5px;
+                margin-left: 5px;
+                overflow: hidden;
+            }
+            #one {
+                width: 210px;
+                height: 600px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                margin-left: 0px;
+                margin-right: 0px;
+                border: 2px solid rgb(98, 128, 133);
+                display: flex;
+            }
+            #two {
+                width: 210px;
+                height: 320px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                margin-left: 0px;
+                margin-right: 0px;
+                border: 2px solid rgb(98, 128, 133);
+                display: flex;
+            }
+            #three {
+                width: 210px;
+                height: 310px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                margin-left: 0px;
+                margin-right: 0px;
+                border: 2px solid rgb(98, 128, 133);
+                display: flex;
+            }
+            #four {
+                width: 210px;
+                height: 610px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                margin-left: 0px;
+                margin-right: 0px;
+                border: 2px solid rgb(98, 128, 133);
+                display: flex;
+            }
+            #five {
+                width: 432.5px;
+                height: 290px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                margin-left: 0px;
+                margin-right: 0px;
+                border: 2px solid rgb(98, 128, 133);
+                display: flex;
+            }
+            #six {
+                width: 210px;
+                height: 610px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                margin-left: 0px;
+                margin-right: 0px;
+                border: 2px solid rgb(98, 128, 133);
+                display: flex;
+            }
+            #seven {
+                width: 210px;
+                height: 310px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                margin-left: 0px;
+                margin-right: 0px;
+                border: 2px solid rgb(98, 128, 133);
+                display: flex;
+            }
+            #eight {
+                width: 210px;
+                height: 290px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                margin-left: 0px;
+                margin-right: 0px;
+                border: 2px solid rgb(98, 128, 133);
+                display: flex;
+            }
+            #nine {
+                width: 210px;
+                height: 610px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                margin-left: 0px;
+                margin-right: 0px;
+                border: 2px solid rgb(98, 128, 133);
+                display: flex;
+            }
+            #ten {
+                width: 210px;
+                height: 610px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                margin-left: 0px;
+                margin-right: 0px;
+                border: 2px solid rgb(98, 128, 133);
+                display: flex;
+            }
+            .long-box {
+                position: relative;
+                overflow: hidden;
+            }
+            .long-box > img {
+                position: relative;
+                width: auto;
+                height: 100%;
+            }
+            .long-box > .caption {
+                position: absolute;
+                top: 0px;
+                bottom: 0px;
+                left: 0px;
+                right: 0px;
+
+                background-color: rgba(0,0,0,0.5);
+                color: #FFF;
+                text-align: center;
+                padding-top: 300px;
+
+                visibility: hidden
+            }
+            .long-box:hover > .caption {
+                visibility: visible;
+            }
+            .short-box {
+                position: relative;
+                overflow: hidden;
+            }
+            .short-box > img {
+                position: relative;
+                width: auto;
+                height: 100%;
+            }
+            .short-box > .caption {
+                position: absolute;
+                top: 0px;
+                bottom: 0px;
+                left: 0px;
+                right: 0px;
+
+                background-color: rgba(0,0,0,0.5);
+                color: #FFF;
+                text-align: center;
+                padding-top: 150px;
+
+                visibility: hidden
+            }
+            .short-box:hover > .caption {
+                visibility: visible;
+            }
+            #footer {
+                width: 900px;
+                height: auto;
+                background-color: rgba(155,192,201);
+                margin-left: auto;
+                margin-right: auto;
+
+                color: rgb(37, 59, 63);
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body style="margin: 0px;">
+        <div id="header">
+            <h1>★ Melanie's Inspiration Board ★</h1>
+        </div>
+        <div id="navbar">
+            <div id="nav">
+                <ul>
+                    <li><a class = "current" href="interests.html">Home</a>
+                        <ul>
+                            <li><a href="#curr">Current Tattoos</a></li>
+                            <li><a href="#follow">Tattoo Artists I Follow</a></li>
+                            <li><a href="#inspo">Tattoo Inspiration</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="main">
+            <div id="left">
+                <div id="one">
+                    <div class="long-box">
+                        <img src="img/orchid.jpeg" alt="Orchirds" style="right:90px;">
+                        <div class="caption">
+                            Orchids
+                        </div>
+                    </div>
+                </div>
+    
+                <div id="two">
+                    <div class="short-box">
+                        <img src="img/girl.png" alt="Junji Ito style portrait" style="height:110%; bottom:20px;">
+                        <div class="caption">
+                            Junji Ito style portrait
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+            <div id="left2">
+                <div id="three">
+                    <div class="short-box">
+                        <img src="img/skull.jpeg" alt="Juggling skeleton">
+                        <div class="caption">
+                            Juggling skeleton
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="four">
+                    <div class="long-box">
+                        <img src="img/dog.png" alt="Cerberus" style="right:20px;">
+                        <div class="caption">
+                            Cerberus
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="right">
+                <div id="six">
+                    <div class="long-box">
+                        <img src="img/guts.png" alt="Anatomical girl" style="right:15px;">
+                        <div class="caption">
+                            Anatomical girl
+                        </div>
+                    </div>
+                </div>
+
+                <div id="seven">
+                    <div class="short-box">
+                        <img src="img/angel.png" alt="Doodle style angels" style="right:50px;">
+                        <div class="caption">
+                            Doodle style angels
+                        </div>
+                    </div>
+                </div>
+    
+                <div id="eight">
+                    <div class="short-box">
+                        <img src="img/moon.jpeg" alt="Portrait of a girl" style="height:110%;">
+                        <div class="caption">
+                            Portrait of a girl
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="right2">
+                <div id="nine">
+                    <div class="long-box">
+                        <img src="img/cerberus.jpeg" alt="Cartoon style cerberus" style="right:85px;">
+                        <div class="caption">
+                            Cartoon style cerberus
+                        </div>
+                    </div>
+                </div>
+    
+                <div id="ten">
+                    <div class="long-box">
+                        <img src="img/god.jpeg" alt="Scribble style dog" style="right:80px;">
+                        <div class="caption">
+                            Scribble style dog
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="bottom">
+                <div id="five">
+                    <div class="short-box">
+                        <img src="img/cyberpunk.jpeg" alt="Cyberpunk girl trio" style="height:150%; bottom:50px;">
+                        <div class="caption">
+                            Cyberpunk girl trio
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            Toh Melanie Xiao Xuan &copy; 2021
+        </div>
+    </body>
+</html>
