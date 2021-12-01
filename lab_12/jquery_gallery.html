@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Toh Melanie Xiao Xuan | Photo Gallery
+        </title>
+        <style>
+            body {
+                background: lightgray;
+            }
+            h1 {
+                text-align: center;
+                margin: 0px;
+            }
+            #header {
+                background-image: url('img/header.jpg');
+                width: 950px;
+                height: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                background-size: cover;
+                background-position: center;
+
+                color:rgb(216, 190, 182);
+                font-size: 1.1em;
+                text-align: center;
+                line-height: 200px;
+            }
+            #main {
+                width: 950px;
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+                display: flex;
+                background-color: rgb(179, 149, 139);
+            }
+            #left {
+                width: 320px;
+                height: auto;
+                padding: 5px;
+                padding-top: 35px;
+                float: left;
+            }
+            .L {
+                width: 280px;
+                height: auto;
+                margin-left: 25px;
+            }
+            .L + p {
+                visibility: hidden;
+            }
+            .L:hover + p {
+                visibility: visible;
+            }
+            #middle {
+                width: 310px;
+                height: auto;
+                padding: 5px;
+                padding-top: 35px;
+                float: left;
+            }
+            .mid {
+                width: 250px;
+                height: auto;
+                margin-left: 15px;
+            }
+            .mid + p {
+                visibility: hidden;
+            }
+            .mid:hover + p {
+                visibility: visible;
+            }
+            #right {
+                width: 320px;
+                height: auto;
+                padding: 5px;
+                padding-top: 35px;
+                float: right;
+            }
+            .R {
+                width: 280px;
+                height: auto;
+                margin-left: 5px;
+            }
+            .R + p {
+                visibility: hidden;
+            }
+            .R:hover + p {
+                visibility: visible;
+            }
+            p {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <h1>My Life in Hong Kong</h1>
+        </div>
+        <div id = "main">
+            <div id = "left">
+                <img class = "L" id="sunnybay" src="img/bday.JPG" alt="My 19th birthday at Sunny Bay with Britney and Casey">
+                <p>My 19th birthday at Sunny Bay with Britney and Casey</p>
+                <img class = "L" id="isabella" src="img/isabella.JPG" alt="Visiting Ngong Ping with Isabella">
+                <p>Visiting Ngong Ping with Isabella</p>
+                <img class = "L" id="aylin" src="img/aylin.jpg" alt="PMQ with Aylin">
+                <p>PMQ with Aylin</p>
+            </div>
+            
+            <div id = "middle">
+                <img class = "mid" id="christie" src="img/christie.JPG" alt="Rosewood Hotel staycation with Christie">
+                <p>Rosewood Hotel staycation with Christie</p>
+                <img class = "mid" id="fg" src="img/fg.JPG" alt="Drinks at Foxglove with Britney and Tiffany">
+                <p>Drinks at Foxglove with Britney and Tiffany</p>
+            </div>
+
+            <div id = "right">
+                <img class = "R" id="ryan" src="img/ryan.JPG" alt="Ryan's 19th birthday party at Foxglove">
+                <p>Ryan's 19th birthday party at Foxglove</p>
+                <img class = "R" id="graddin" src="img/graddin.jpg" alt="Graduation night with Bella and Casey">
+                <p>Graduation night with Bella and Casey</p>
+                <img class = "R" id="jermbday" src="img/jermbday.jpg" alt="Jerm's 20th birthday party in Causeway Bay">
+                <p>Jerm's 20th birthday party in Causeway Bay</p>
+            </div>
+        </div>
+
+        <script 
+        src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <script>
+            // $('CSS Selector').method()
+            // $('').css('CSS PROP', 'CSS VALUE')
+            $('#sunnybay').click(function(){
+                $('#sunnybay').css('border', '3px solid rgb(118, 75, 62)');
+                $('#isabella').css('border', '0px none');
+                $('#aylin').css('border', '0px none');
+                $('#christie').css('border', '0px none');
+                $('#fg').css('border', '0px none');
+                $('#ryan').css('border', '0px none');
+                $('#graddin').css('border', '0px none');
+                $('#jermbday').css('border', '0px none');
+            });
+            $('#isabella').click(function(){
+                $('#isabella').css('border', '3px solid rgb(118, 75, 62)');
+                $('#sunnybay').css('border', '0px none');
+                $('#aylin').css('border', '0px none');
+                $('#christie').css('border', '0px none');
+                $('#fg').css('border', '0px none');
+                $('#ryan').css('border', '0px none');
+                $('#graddin').css('border', '0px none');
+                $('#jermbday').css('border', '0px none');
+            });
+            $('#aylin').click(function(){
+                $('#aylin').css('border', '3px solid rgb(118, 75, 62)');
+                $('#isabella').css('border', '0px none');
+                $('#sunnybay').css('border', '0px none');
+                $('#christie').css('border', '0px none');
+                $('#fg').css('border', '0px none');
+                $('#ryan').css('border', '0px none');
+                $('#graddin').css('border', '0px none');
+                $('#jermbday').css('border', '0px none');
+            });
+            $('#christie').click(function(){
+                $('#christie').css('border', '3px solid rgb(118, 75, 62)');
+                $('#isabella').css('border', '0px none');
+                $('#aylin').css('border', '0px none');
+                $('#sunnybay').css('border', '0px none');
+                $('#fg').css('border', '0px none');
+                $('#ryan').css('border', '0px none');
+                $('#graddin').css('border', '0px none');
+                $('#jermbday').css('border', '0px none');
+            });
+            $('#fg').click(function(){
+                $('#fg').css('border', '3px solid rgb(118, 75, 62)');
+                $('#isabella').css('border', '0px none');
+                $('#aylin').css('border', '0px none');
+                $('#christie').css('border', '0px none');
+                $('#sunnybay').css('border', '0px none');
+                $('#ryan').css('border', '0px none');
+                $('#graddin').css('border', '0px none');
+                $('#jermbday').css('border', '0px none');
+            });
+            $('#ryan').click(function(){
+                $('#ryan').css('border', '3px solid rgb(118, 75, 62)');
+                $('#isabella').css('border', '0px none');
+                $('#aylin').css('border', '0px none');
+                $('#christie').css('border', '0px none');
+                $('#fg').css('border', '0px none');
+                $('#sunnybay').css('border', '0px none');
+                $('#graddin').css('border', '0px none');
+                $('#jermbday').css('border', '0px none');
+            });
+            $('#graddin').click(function(){
+                $('#graddin').css('border', '3px solid rgb(118, 75, 62)');
+                $('#isabella').css('border', '0px none');
+                $('#aylin').css('border', '0px none');
+                $('#christie').css('border', '0px none');
+                $('#fg').css('border', '0px none');
+                $('#ryan').css('border', '0px none');
+                $('#sunnybay').css('border', '0px none');
+                $('#jermbday').css('border', '0px none');
+            });
+            $('#jermbday').click(function(){
+                $('#jermbday').css('border', '3px solid rgb(118, 75, 62)');
+                $('#isabella').css('border', '0px none');
+                $('#aylin').css('border', '0px none');
+                $('#christie').css('border', '0px none');
+                $('#fg').css('border', '0px none');
+                $('#ryan').css('border', '0px none');
+                $('#graddin').css('border', '0px none');
+                $('#sunnybay').css('border', '0px none');
+            });
+        </script>
+    </body>
+</html>
