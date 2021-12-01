@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Toh Melanie Xiao Xuan | Puzzle
+        </title>
+        <style>
+            body {
+                background: #ecffff;
+            }
+            h1 {
+                text-align: center;
+                margin: 0px;
+            }
+            #header {
+                width: 900px;
+                height: 80px;
+                margin: auto;
+
+                color: rgb(37, 59, 63);
+                font-size: 1.1em;
+                text-align: center;
+                line-height: 80px;
+            }
+            #main {
+                width: 900px;
+                margin: auto;
+                margin-bottom: 1000px;
+                display: flex;
+            }
+            img {
+                width: 600px;
+            }
+            #pic1 {
+                width: 600px;
+                display: flex;
+                position: absolute;
+                text-align: center;
+                top: 150px;
+                left: 400px;
+            }
+            #pic2 {
+                width: 600px;
+                display: flex;
+                position: absolute;
+                text-align: center;
+                top: 268px;
+                left: 330px;
+            }
+            #pic3 {
+                width: 600px;
+                display: flex;
+                position: absolute;
+                text-align: center;
+                top: 422px;
+                left: 400px;
+            }
+            #pic4 {
+                width: 600px;
+                display: flex;
+                position: absolute;
+                text-align: center;
+                top: 578px;
+                left: 510px;
+                z-index: 1;
+            }
+            #pic5 {
+                width: 600px;
+                display: flex;
+                position: absolute;
+                text-align: center;
+                top: 694px;
+                left: 400px;
+            }
+            #pic6 {
+                width: 600px;
+                display: flex;
+                position: absolute;
+                text-align: center;
+                top: 800px;
+                left: 346px;
+            }
+            #pic2 img {
+                box-shadow: 5px -5px 3px rgb(98, 153, 163);
+            }
+            #pic4 img {
+                box-shadow: 5px -5px 3px rgb(98, 153, 163);
+            }
+            #pic6 img {
+                box-shadow: 5px -5px 3px rgb(98, 153, 163);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <div id="header">
+                <h1> Melanie's Puzzle </h1>
+            </div>
+            <div id="pic1">
+                <img src="img/thunder1.jpg" alt="first row" class="draggable">
+            </div>
+            <div id="pic2">
+                <img src="img/thunder2.jpg" alt="second row" class="draggable">
+            </div>
+            <div id="pic3">
+                <img src="img/thunder3.jpg" alt="third row" class="draggable">
+            </div>
+            <div id="pic4">
+                <img src="img/thunder4.jpg" alt="fourth row" class="draggable">
+            </div>
+            <div id="pic5">
+                <img src="img/thunder5.jpg" alt="fifth row" class="draggable">
+            </div>
+            <div id="pic6">
+                <img src="img/thunder6.jpg" alt="sixth row" class="draggable">
+            </div>
+        </div>
+
+        <script src="draggabilly/draggabilly.pkgd.min.js"></script>
+        <script>
+            var elem = document.querySelector('.draggable');
+            var draggie = new Draggabilly( elem, {
+            // options...
+            });
+
+            // or pass in selector string as first argument
+            var draggie = new Draggabilly( '.draggable', {
+            // options...
+            });
+
+            // if you have multiple .draggable elements
+            // get all draggie elements
+            var draggableElems = document.querySelectorAll('.draggable');
+            // array of Draggabillies
+            var draggies = []
+            // init Draggabillies
+            for ( var i=0; i < draggableElems.length; i++ ) {
+            var draggableElem = draggableElems[i];
+            var draggie = new Draggabilly( draggableElem, {
+                // options...
+            });
+            draggies.push( draggie );
+            }
+        </script>
+
+    </body>
+</html>

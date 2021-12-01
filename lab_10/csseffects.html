@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Toh Melanie Xiao Xuan | CSS Effects
+        </title>
+        <style>
+            body {
+                background: lightblue;
+            }
+            h1 {
+                text-align: center;
+                font-size: 50px;
+                color: navy;
+            }
+            #parent {
+                width: 1100px;
+                text-align: center;
+                margin: auto;
+            }
+            #parent img{
+                height: 400px;
+                width: auto;
+            }
+            #parent:hover #grad{
+                transform: translateX(400px) translateY(-100px);
+                transition: all 0.8s ease 0.5;
+            }
+            #parent:hover #jerm{
+                transform: translateX(-100px) translateY(200px) rotate(0deg);
+                transition: all 0.8s ease 0.5;
+            }
+            #parent:hover #ryan{
+                transform: translateX(-400px) translateY(-100px) rotate(0deg);
+                transition: all 0.8s ease 0.5;
+            }
+            #grad {
+                position: relative;
+                top: 250px;
+                transition: all 1s;
+            }
+            #jerm {
+                position: relative;
+                bottom: 190px;
+                transform: rotate(20deg);
+                transition: all 1s;
+            }
+            #ryan {
+                position: relative;
+                bottom: 650px;
+                transform: rotate(40deg);
+                transition: all 1s;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Memories!</h1>
+        <div id = "parent">
+            <img src="img/graddin.jpg" alt="Graduation Dinner" id="grad">
+            <img src="img/jermbday.jpg" alt="Jerm's Birthday" id="jerm">
+            <img src="img/ryan.JPG" alt="Ryan's Birthday" id="ryan">      
+        </div>
+    </body>
+</html>
